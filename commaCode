@@ -1,0 +1,17 @@
+spam = []
+
+def printLists(spam):
+    print('Your list: ', end='')
+    for i in range(len(spam)):
+        if i == (len(spam) - 1):
+            print(str(spam[i]), end='.')
+        else:
+            print(str(spam[i]), end = ', ')
+
+while True:
+    print('Enter the', len(spam) + 1, 'element: ', end = '')
+    element = input()
+    if element == '':
+        break
+    spam.append(element)
+printLists(spam)
